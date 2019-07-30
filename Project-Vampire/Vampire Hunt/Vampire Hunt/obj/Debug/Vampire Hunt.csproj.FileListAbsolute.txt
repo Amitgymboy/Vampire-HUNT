@@ -1,0 +1,10 @@
+H:\Programing\Project-Vampire\Vampire Hunt\Vampire Hunt\obj\Debug\Vampire Hunt.csprojAssemblyReference.cache
+H:\Programing\Project-Vampire\Vampire Hunt\Vampire Hunt\obj\Debug\Vampire_Hunt.Form1.resources
+H:\Programing\Project-Vampire\Vampire Hunt\Vampire Hunt\obj\Debug\Vampire_Hunt.Properties.Resources.resources
+H:\Programing\Project-Vampire\Vampire Hunt\Vampire Hunt\obj\Debug\Vampire Hunt.csproj.GenerateResource.cache
+H:\Programing\Project-Vampire\Vampire Hunt\Vampire Hunt\obj\Debug\Vampire Hunt.csproj.CoreCompileInputs.cache
+H:\Programing\Project-Vampire\Vampire Hunt\Vampire Hunt\bin\Debug\Vampire Hunt.exe.config
+H:\Programing\Project-Vampire\Vampire Hunt\Vampire Hunt\bin\Debug\Vampire Hunt.exe
+H:\Programing\Project-Vampire\Vampire Hunt\Vampire Hunt\bin\Debug\Vampire Hunt.pdb
+H:\Programing\Project-Vampire\Vampire Hunt\Vampire Hunt\obj\Debug\Vampire Hunt.exe
+H:\Programing\Project-Vampire\Vampire Hunt\Vampire Hunt\obj\Debug\Vampire Hunt.pdb
