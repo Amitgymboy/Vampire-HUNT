@@ -15,6 +15,10 @@ namespace Vampire_Hunt
         Graphics g; //declare a graphics object called g
                     // declare space for an array of 7 objects called planet 
         Planet[] planet = new Planet[7];
+        Random xspeed = new Random();
+        spaceship spaceship = new spaceship();
+        bool up, down;
+        string move;
 
 
         public form1()
@@ -45,13 +49,48 @@ namespace Vampire_Hunt
         {
             //get the graphics used to paint on the panel control
             g = e.Graphics;
+            spaceship.drawSpaceship(g);
             //call the Planet class's DrawPlanet method to draw the image planet1 
             for (int i = 0; i < 7; i++)
             {
+                spaceship.drawSpaceship(g);
+                // generate a random number from 5 to 20 and put it in rndmspeed
+                int rndmspeed = xspeed.Next(5, 20);
+                planet[i].x -= rndmspeed;
                 //call the Planet class's drawPlanet method to draw the images
                 planet[i].drawPlanet(g);
             }
+            
 
+
+        }
+
+        private void form1_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Up) { up = false; }
+            if (e.KeyData == Keys.Down) { down = false; }
+
+        }
+
+        private void form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Up) { up = true; }
+            if (e.KeyData == Keys.Down) { down = true; }
+
+        }
+
+        private void tmrship_Tick(object sender, EventArgs e)
+        {
+            if (up) // if right arrow key pressed
+            {
+                move = "up";
+                spaceship.movespaceship(move);
+            }
+            if (down) // if left arrow key pressed
+            {
+                move = "down";
+                spaceship.movespaceship(move);
+            }
 
         }
 

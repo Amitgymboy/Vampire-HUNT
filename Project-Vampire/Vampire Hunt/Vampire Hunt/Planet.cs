@@ -16,6 +16,7 @@ namespace Vampire_Hunt
         public int score;
         //Create a constructor (initialises the values of the fields)
         public Planet(int spacing)
+       
         {
             x = 450;
             y = spacing;
@@ -32,9 +33,16 @@ namespace Vampire_Hunt
         }
         public void movePlanet()
         {
-            x -= 5;
+         
 
             planetRec.Location = new Point(x, y);
+
+            if (planetRec.Location.X < 30)
+            {
+                x = 550;
+                planetRec.Location = new Point(x, y);
+            }
+
         }
 
 

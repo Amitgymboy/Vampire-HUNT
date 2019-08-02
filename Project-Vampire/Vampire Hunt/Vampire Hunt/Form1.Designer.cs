@@ -38,6 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tmrplanet = new System.Windows.Forms.Timer(this.components);
+            this.tmrship = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // panel1
@@ -119,6 +120,10 @@
             this.tmrplanet.Enabled = true;
             this.tmrplanet.Tick += new System.EventHandler(this.tmrplanet_Tick);
             // 
+            // tmrship
+            // 
+            this.tmrship.Tick += new System.EventHandler(this.tmrship_Tick);
+            // 
             // form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -132,8 +137,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.panel1);
+            this.KeyPreview = true;
             this.Name = "form1";
             this.Text = "Form1";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.form1_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.form1_KeyUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,6 +158,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Timer tmrplanet;
+        private System.Windows.Forms.Timer tmrship;
     }
 }
 
