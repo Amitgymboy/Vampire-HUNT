@@ -1,0 +1,10 @@
+H:\Programing\Vampire Game\Vampire Game\obj\Debug\Vampire Game.csprojAssemblyReference.cache
+H:\Programing\Vampire Game\Vampire Game\obj\Debug\Vampire_Game.Form1.resources
+H:\Programing\Vampire Game\Vampire Game\obj\Debug\Vampire_Game.Properties.Resources.resources
+H:\Programing\Vampire Game\Vampire Game\obj\Debug\Vampire Game.csproj.GenerateResource.cache
+H:\Programing\Vampire Game\Vampire Game\obj\Debug\Vampire Game.csproj.CoreCompileInputs.cache
+H:\Programing\Vampire Game\Vampire Game\bin\Debug\Vampire Game.exe.config
+H:\Programing\Vampire Game\Vampire Game\bin\Debug\Vampire Game.exe
+H:\Programing\Vampire Game\Vampire Game\bin\Debug\Vampire Game.pdb
+H:\Programing\Vampire Game\Vampire Game\obj\Debug\Vampire Game.exe
+H:\Programing\Vampire Game\Vampire Game\obj\Debug\Vampire Game.pdb
