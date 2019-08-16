@@ -39,7 +39,9 @@ namespace Vampire_Game
             stakeRec.Location = new Point(x, y);
             if (stakeRec.Location.X < 14)
             {
+                score += 1;// add 1 to score when stake reaches left side of panel
                 x = 700;
+                
                 stakeRec.Location = new Point(x, y);
             }
 
