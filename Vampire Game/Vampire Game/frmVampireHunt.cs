@@ -80,7 +80,7 @@ namespace Vampire_Game
         {
             score = 0;
             lblScore.Text = score.ToString();
-            lives = int.Parse(txtLives.Text);// pass lives entered from textbox to lives variable
+            lives = int.Parse(lblLives.Text);// pass lives entered from textbox to lives variable
             tmrStake.Enabled = true;
             tmrVampire.Enabled = true;
 
@@ -95,7 +95,7 @@ namespace Vampire_Game
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lives = int.Parse(txtLives.Text);// pass lives entered from textbox to lives variable
+            lives = int.Parse(lblLives.Text);// pass lives entered from textbox to lives variable
             MessageBox.Show("Use the left and right arrow keys to move the spaceship. \n Don't get hit by the planets! \n Every planet that gets past scores a point. \n If a planet hits a spaceship a life is lost! \n \n Enter your Name press tab and enter the number of lives \n Click Start to begin", "Game Instructions");
             txtName.Focus();
 
@@ -112,7 +112,7 @@ namespace Vampire_Game
                 int rndmspeed = yspeed.Next(5, 20);
                 stake[i].x -= rndmspeed;
 
-                //call the Planet class's drawPlanet method to draw the images
+                //call the stake class's drawStake method to draw the images
                 stake[i].drawStake(g);
             }
             vampire.drawVampire(g);
@@ -133,7 +133,7 @@ namespace Vampire_Game
                     //reset planet[i] back to top of panel
                     stake[i].x = 30; // set  y value of planetRec
                     lives -= 1;// lose a life
-                    txtLives.Text = lives.ToString();// display number of lives
+                   lblLives.Text = lives.ToString();// display number of lives
                     checkLives();
                 }
 

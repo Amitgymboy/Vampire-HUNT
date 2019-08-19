@@ -20,9 +20,9 @@ namespace Vampire_Game
         {
             x = 700;
             y = spacing;
-            width = 20;
-            height = 20;
-            stakeImage = Image.FromFile("planet1.png");
+            width = 44;
+            height = 15;
+            stakeImage = Image.FromFile("stake.png");
             stakeRec = new Rectangle(x, y, width, height);
         }
         // Methods for the Planet class
